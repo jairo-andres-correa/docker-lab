@@ -1,0 +1,1 @@
+docker run -d --name nombre -e NODE_ENV=production -p 3000:3000 imagen

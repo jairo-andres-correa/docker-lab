@@ -1,0 +1,7 @@
+# base image
+FROM nginx:1.11-alpine
+COPY . /usr/share/nginx/html
+#append configuration
+RUN echo "daemon off;" >> /etc/nginx/nginx.conf
+EXPOSE 80
+CMD ["nginx"]
